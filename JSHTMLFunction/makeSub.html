@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bread = prompt("Enter how many bread");
+        let vaggies = prompt("Enter how many veggies");
+        let sauce = prompt("Enter how many sauces");
+
+        function subprice(bread, vaggies, sauce) {
+            console.log("Total bill with detail is here:");
+            console.log("For bread total $ = " + bread * 3);
+            console.log("For veggies total $ = " + vaggies * 2);
+            console.log("For sauce total $ = " + sauce * 1);
+
+            console.log("Result amount is:");
+            return (bread * 3 + vaggies * 2 + sauce * 1);
+        }
+
+        let amount = subprice(bread, vaggies, sauce);
+        console.log(amount);
+    </script>
+</body>
+</html>
